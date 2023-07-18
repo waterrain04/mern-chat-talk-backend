@@ -44,7 +44,7 @@ app.use('/api/message', messageRoutes);
 
 
   const server =app.listen(process.env.PORT, ()=>{
-    console.log("Listening on port " + process.env.PORT);
+    console.log("Listenining on port " + process.env.PORT);
   })
 
   const io = new Server(server, {
