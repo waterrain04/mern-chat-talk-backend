@@ -22,6 +22,10 @@ app.use(cors());
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 
+app.get('/', (req,res)=>{
+  res.send("WELCOME TO YOUR API")
+})
+
 // middleware
 app.use('/api/user', userRoutes);
 app.use('/api/chat', chatRoutes);
